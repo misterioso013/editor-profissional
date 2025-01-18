@@ -2,10 +2,8 @@
 import { CustomButton } from "@/components/ui/custom-button";
 import { Card } from "@/components/ui/card";
 import { VideoBackground } from "@/components/ui/video-background";
-import Image from "next/image";
 import { motion } from "framer-motion";
 import { TestimonialCard } from "@/components/ui/testimonial-card";
-import { AnimatedIcon } from "@/components/ui/animated-icon";
 import { ArrowRight, Play, Star, Trophy, Users, Video } from "lucide-react";
 
 export default function Home() {

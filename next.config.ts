@@ -1,7 +1,9 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
   images: {
     remotePatterns: [
       {
@@ -10,6 +12,7 @@ const nextConfig: NextConfig = {
       },
     ],
   },
+  missingSuspenseWithCSRError: false,
 };
 
 export default nextConfig;

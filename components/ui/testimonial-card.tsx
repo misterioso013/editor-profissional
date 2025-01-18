@@ -34,9 +34,9 @@ export function TestimonialCard({ name, role, testimonial, image }: TestimonialC
           </div>
         </div>
         <blockquote className="relative text-white/90 italic leading-relaxed">
-          <span className="text-3xl font-serif text-custom-lightBlue">"</span>
+          <span className="text-3xl font-serif text-custom-lightBlue">&ldquo;</span>
           {testimonial}
-          <span className="text-3xl font-serif text-custom-lightBlue">"</span>
+          <span className="text-3xl font-serif text-custom-lightBlue">&rdquo;</span>
         </blockquote>
       </Card>
     </motion.div>
