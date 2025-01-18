@@ -230,13 +230,15 @@ export default function Home() {
               <div>
                 <h3 className="text-xl font-bold mb-4">Newsletter</h3>
                 <p className="text-custom-lightBlue/90 mb-4">Receba dicas de edição e novidades</p>
-                <div className="flex gap-2">
+                <div className="flex flex-col sm:flex-row gap-2">
                   <input
                     type="email"
                     placeholder="Seu melhor e-mail"
-                    className="px-4 py-2 rounded-lg bg-white/10 border border-white/20 focus:outline-none focus:border-custom-lightBlue"
+                    className="w-full px-4 py-2 rounded-lg bg-white/10 border border-white/20 focus:outline-none focus:border-custom-lightBlue"
                   />
-                  <CustomButton variant="secondary">Inscrever</CustomButton>
+                  <CustomButton variant="secondary" className="whitespace-nowrap">
+                    Inscrever
+                  </CustomButton>
                 </div>
               </div>
             </div>

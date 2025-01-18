@@ -12,7 +12,6 @@ const nextConfig: NextConfig = {
       },
     ],
   },
-  missingSuspenseWithCSRError: false,
 };
 
 export default nextConfig;
