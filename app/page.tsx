@@ -129,8 +129,77 @@ export default function Home() {
                   </motion.div>
                 ))}
               </motion.div>
-            </div>
+        </div>
           </motion.div>
+        </section>
+
+        {/* Seção Motivacional */}
+        <section className="relative py-32">
+          <div className="absolute inset-0 bg-gradient-to-b from-custom-navy/90 to-custom-navy" />
+          <div className="container relative mx-auto px-4">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8 }}
+              className="max-w-5xl mx-auto text-center"
+            >
+              <span className="px-4 py-1 rounded-full bg-white/10 backdrop-blur-sm text-custom-lightBlue border border-white/20 inline-block mb-6">
+                Comece Seu Canal Hoje
+              </span>
+              <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+                Quer Começar um Canal de Sucesso no YouTube?
+              </h2>
+              <p className="text-xl text-custom-lightBlue/90 mb-8 leading-relaxed">
+                Não deixe a falta de conhecimento em edição impedir seus sonhos.
+                Seja você uma dona de casa com receitas incríveis, um especialista
+                compartilhando conhecimento ou alguém com histórias para contar -
+                podemos transformar suas ideias em conteúdo profissional.
+              </p>
+
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+                {[
+                  {
+                    title: "Ideias Simples",
+                    description: "Transforme suas receitas caseiras, dicas de artesanato ou experiências pessoais em conteúdo profissional"
+                  },
+                  {
+                    title: "Sem Complicação",
+                    description: "Você grava do seu jeito, nós cuidamos de toda a parte técnica da edição"
+                  },
+                  {
+                    title: "Suporte Completo",
+                    description: "Orientação sobre equipamentos básicos, iluminação e dicas para gravar melhor"
+                  }
+                ].map((item, index) => (
+                  <motion.div
+                    key={index}
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.5, delay: index * 0.2 }}
+                    className="p-6 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10 hover:bg-white/10 transition-all"
+                  >
+                    <h3 className="text-xl font-bold text-white mb-3">{item.title}</h3>
+                    <p className="text-custom-lightBlue/90">{item.description}</p>
+                  </motion.div>
+                ))}
+              </div>
+
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5 }}
+                className="flex flex-col sm:flex-row gap-4 justify-center items-center"
+              >
+                <CustomButton size="lg" className="group">
+                  Saiba como começar
+                  <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
+                </CustomButton>
+                <span className="text-white/60 text-sm">
+                  Consultoria gratuita para iniciantes
+                </span>
+              </motion.div>
+            </motion.div>
+          </div>
         </section>
 
         {/* Serviços Section */}
@@ -305,8 +374,8 @@ export default function Home() {
               </p>
             </div>
           </div>
-        </footer>
-      </div>
+      </footer>
+    </div>
     </>
   );
 }
